@@ -8,14 +8,14 @@
 <body>
 <table th:border="1">
     <tr>
-        <th>YEAR</th>
-        <th>MODEL</th>
-        <th>CLASS</th>
+        <th>Year</th>
+        <th>Model</th>
+        <th>Class</th>
     </tr>
     <tr th:each="car : ${cars}">
-        <td th:text="${car.getYear()}">year</td>
-        <td th:text="${car.getModel()}">model</td>
-        <td th:text="${car.getModelClass()}">modelClass</td>
+        <td th:text="${car.getYear()}"></td>
+        <td th:text="${car.getModel()}"></td>
+        <td th:text="${car.getModelClass()}"></td>
     </tr>
 </table>
 </body>
